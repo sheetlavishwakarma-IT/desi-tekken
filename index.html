@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>देसी टेक्कन – Desi Tekken</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="title" class="scr on">
+  <div class="logo">देसी<br><b>टेक्कन</b></div>
+  <p class="tag">DESI TEKKEN · अखाड़ा फाइट</p>
+  <p class="by">Created by <span class="cr"></span></p>
+  <button class="btn" id="go">शुरू करो · PRESS START</button>
+</div>
+
+<div id="select" class="scr">
+  <h2>अपना योद्धा चुनो · SELECT FIGHTER</h2>
+  <div class="sel">
+    <div class="pv"><canvas id="pvc" width="240" height="320"></canvas><h3 id="pn"></h3><p id="pd"></p><div id="ps"></div></div>
+    <div id="grid"></div>
+  </div>
+  <button class="btn" id="fgt">लड़ाई शुरू · FIGHT</button>
+</div>
+
+<div id="vs" class="scr"><div class="vsw"><div id="v1"></div><span>VS</span><div id="v2"></div></div></div>
+
+<div id="game" class="scr">
+  <div class="hud">
+    <div class="side"><div class="nm" id="hn1"></div><div class="bar r"><i class="tr" id="t1"></i><i class="fl" id="b1"></i></div><div class="pips" id="pp1"></div></div>
+    <div class="tmr" id="tm">60</div>
+    <div class="side"><div class="nm" id="hn2" style="text-align:right"></div><div class="bar l"><i class="tr" id="t2"></i><i class="fl" id="b2"></i></div><div class="pips" id="pp2" style="justify-content:flex-end"></div></div>
+  </div>
+  <div class="cv"><canvas id="cv" width="900" height="420"></canvas><div id="fx"></div><div id="bn"></div><div id="end"></div></div>
+  <div class="ctl">
+    <div class="grp"><button class="k" data-h="l">◀</button><button class="k" data-h="r">▶</button></div>
+    <div class="grp"><button class="k" data-a="lp">LP<small>बायां मुक्का</small></button><button class="k" data-a="rp">RP<small>दायां मुक्का</small></button><button class="k" data-a="lk">LK<small>बायीं लात</small></button><button class="k" data-a="rk">RK<small>दायीं लात</small></button></div>
+  </div>
+  <p class="help">Keyboard: A/D ya ←/→ chalo · peeche jao = BLOCK · U=LP · I=RP · J=LK · K=RK · M = sound on/off</p>
+  <p class="by">Created by <span class="cr"></span></p>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
